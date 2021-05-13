@@ -7,7 +7,9 @@
     "start": "nodemon",
     "build": "tsc",
     "production": "tsc && node ./dist/index.js",
-    "test": "jest"
+    "test": "jest",
+    "eslint:fix": "eslint --fix --ext .ts --ext .tsx ./src",
+    "prettier:fix": "prettier --write ."
   },
   "devDependencies": {
     "@types/express": "^4.17.11",
